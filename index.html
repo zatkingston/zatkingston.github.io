@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamPlan</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/elementsStyle.css"></link>
+    <link rel="stylesheet" href="./css/style.css"></link>
+    
+</head>
+<body>
+
+    <div class="inputsContainer">
+        <div class="inputsContainer__daysRange">
+            <label>Placements des jours : </label><input type="range" max="7" step="1" value="4" id="daysRangeInput" class="rangeInput"/>
+
+        </div>
+        <div class="inputsContainer__letsPlayName1">
+            <label>Nom Let's Play 1 : </label><input type="text" id="letsPlayName1Input" class="textInput letsPlayInput"/>    
+        </div>
+        <div class="inputsContainer__letsPlayName2">
+            <label>Nom Let's Play 2 : </label><input type="text" id="letsPlayName2Input" class="textInput letsPlayInput"/>    
+        </div>
+        <div class="inputsContainer__letsPlayName2">
+            <label>Génerer et le planning : </label><br/>
+            <button class="render-button" id="generateButton">Génerer le plannning</button> 
+        </div>
+       
+        
+    </div>
+    <div id="table_container">
+      <table class="tg" id="planning_sample">
+        <thead>
+          <tr>
+            <th class="tg-index tg-0lax"> <a id="downloadButton" download></a></th>
+            <th class="tg-0pky tg-day">vendredi</th>
+            <th class="tg-0pky tg-day">samedi</th>
+            <th class="tg-0pky tg-day">dimanche</th>
+            <th class="tg-0pky tg-day">lundi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tg-0lax tg-hour">18h00 - 20h00</td>
+            <td class="tg-0pky tg-component"></td>
+            <td class="tg-0pky tg-component"></td>
+            <td class="tg-0pky tg-component"></td>
+            <td class="tg-0pky tg-component"></td>
+          </tr>
+          <tr>
+            <td class="tg-0lax tg-hour">20h00 - 22h00</td>
+            <td class="tg-0pky tg-component"></td>
+            <td class="tg-0pky tg-component"></td>
+            <td class="tg-0pky tg-component"></td>
+            <td class="tg-0pky tg-component"></td>
+          </tr>
+          <tr>
+            <td class="tg-0lax tg-hour">22h00 - 00h00</td>
+            <td class="tg-0pky tg-component"></td>
+            <td class="tg-0pky tg-component"></td>
+            <td class="tg-0pky tg-component"></td>
+            <td class="tg-0pky tg-component"></td>
+          </tr>
+          <tr>
+            <td class="tg-0lax tg-hour">00h00 - 02h00</td>
+            <td class="tg-0pky tg-component"></td>
+            <td class="tg-0pky tg-component"></td>
+            <td class="tg-0pky tg-component"></td>
+            <td class="tg-0pky tg-component"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script type="text/javascript" src="node_modules/html2canvas/dist/html2canvas.min.js"></script>
+    <script type="text/javascript" src="./definitive-data.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+
+
+
+    <style>
+        
+    </style>
+</body>
+</html>
