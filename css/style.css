@@ -1,0 +1,109 @@
+body {
+  background: #FC5C7D;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6A82FB, #FC5C7D);
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+}
+body label, body p, body th, body td {
+  font-family: "Roboto", sans-serif;
+}
+
+#table_container {
+  width: 1300px;
+  height: 600px;
+}
+
+.inputsContainer {
+  background: #FC466B;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3F5EFB, #FC466B);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  line-height: 5rem;
+  margin: 0px;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  width: 100%;
+  height: 10%;
+}
+@media (max-width: 800px) {
+  .inputsContainer {
+    height: 40%;
+  }
+}
+.inputsContainer:after {
+  background: inherit;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 85%;
+  top: 30px;
+  z-index: -1;
+  filter: blur(5px);
+}
+.inputsContainer__daysRange {
+  margin-left: 0%;
+}
+.inputsContainer .textInput {
+  width: 100%;
+}
+.inputsContainer div {
+  display: block;
+  position: inherit;
+  width: 100%;
+  height: 6rem;
+  margin: 6px;
+  line-height: 36px;
+  font-size: 20px;
+}
+.inputsContainer div label {
+  color: #f3e7e9;
+  font-size: 100%;
+}
+.inputsContainer div label, .inputsContainer div input {
+  margin: auto;
+}
+
+.rangeInput {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.tg {
+  border-spacing: 0;
+  background-color: #161516;
+  margin: 6% auto;
+  color: #f3e7e9;
+}
+.tg-hour {
+  font-size: 1em;
+}
+.tg-day {
+  font-size: 1.5em;
+}
+.tg-component {
+  font-size: 1em;
+}
+.tg-0pky {
+  text-align: left;
+  vertical-align: top;
+  padding: 45px 100px;
+}
+.tg-0lax {
+  padding: 20px 10px;
+  background-color: #252325;
+}
+
+/*# sourceMappingURL=style.css.map */
